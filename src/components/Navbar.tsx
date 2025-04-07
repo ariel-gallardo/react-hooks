@@ -7,6 +7,7 @@ const Navbar = () => {
                 <div className="flex gap-1 justify-around">
                     <Link href={'/'} className="text-white border-2 rounded">Home</Link>
                     <Link href={'/state-hooks/useState'} className="text-white border-2 rounded">UseState</Link>
+                    <Link href={'/state-hooks/useReducer'} className="text-white border-2 rounded">UseReducer</Link>
                 </div>
             </div>
         </nav>
