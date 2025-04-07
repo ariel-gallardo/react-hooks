@@ -5,6 +5,7 @@ import Product from "@models/Product";
 
 
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Store = ({store,dispatch}: { store: StoreEntity, dispatch: any }) => {
 
     const [products, setProducts] = useState([] as Product[]);

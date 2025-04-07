@@ -43,16 +43,16 @@ function StoreFunction(prevState: Store, action: ActionDispatch<[ActionType]>): 
         case 'HandleQuantity':
             payload = action.payload as HandleQuantity;
             let cItems = prevState?.chart?.items ? prevState.chart.items : [] as ChartDetail[];
-            let cState = prevState?.chart?.status ?? 'Searching';
-            let cProduct = prevState.products?.find(x => x.id == (payload as HandleQuantity).productId);
-            let cIndex = cItems.findIndex(x => x.id == (payload as HandleQuantity).productId);
+            const cState = prevState?.chart?.status ?? 'Searching';
+            const cProduct = prevState.products?.find(x => x.id == (payload as HandleQuantity).productId);
+            const cIndex = cItems.findIndex(x => x.id == (payload as HandleQuantity).productId);
             if (cIndex > -1){
                 cItems[cIndex].quantity = (payload as HandleQuantity).quantity;
                 if (cItems[cIndex].quantity == 0) cItems = cItems.filter(x => x.id != cItems[cIndex].id);
                 else cItems[cIndex].subTotal = cItems[cIndex].quantity * (cProduct?.price ?? 0);
             }
             else{
-                let nItem = {
+                const nItem = {
                     id: (payload as HandleQuantity).productId,
                     quantity: (payload as HandleQuantity).quantity,
                     imageUrl: cProduct?.imgUrl,

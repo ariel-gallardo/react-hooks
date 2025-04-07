@@ -2,7 +2,9 @@ import { ActionDispatch } from "@actionReducer/ActionType";
 import HandleQuantity from "@actionReducer/HandleQuantity";
 import ChartDetail from "@models/ChartDetail";
 import { Plus, Minus, Trash } from 'lucide-react';
+import Image from "next/image";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const ChartItem = ({item,dispatch}: {item: ChartDetail, dispatch: any}) => {
 
     const plusItem = () => {
@@ -28,7 +30,7 @@ const ChartItem = ({item,dispatch}: {item: ChartDetail, dispatch: any}) => {
 
     return (
         <li className="border rounded-2xl p-2 text-sm flex gap-2 bg-cyan-300 justify-between">
-            <img src={item.imageUrl} className="w-10" />
+            <Image alt={item.name} width={100} height={200} src={item.imageUrl} className="w-10" />
             <div className="flex justify-between  w-100 gap-2"> 
                 <div className="bg-cyan-400 text-black rounded-xl justify-center flex flex-col p-2 w-100">
                     <div className="flex gap-2">

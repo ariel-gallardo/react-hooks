@@ -1,6 +1,7 @@
 import { ActionDispatch } from "@actionReducer/ActionType";
 import HandleQuantity from "@actionReducer/HandleQuantity";
 import ProductStore from "@models/ProductStore";
+import Image from "next/image";
 import { FormEvent, useEffect, useState } from "react";
 
 const StoreItem = ({id, name, imgUrl, description, dispatch, chart}: ProductStore) => {
@@ -21,15 +22,15 @@ const StoreItem = ({id, name, imgUrl, description, dispatch, chart}: ProductStor
     }
 
     useEffect(() => {
-        let cItem = chart?.items.find(x => x.id == id);
+        const cItem = chart?.items.find(x => x.id == id);
         if(cItem) setValue(cItem.quantity);
         else setValue('');
-    },[chart])
+    },[chart, id])
 
     return (
         <div className="rounded border flex flex-col w-50">
             <h3>{name}</h3>
-            <img src={imgUrl} />
+            <Image alt={name} width={100} height={200} src={imgUrl} />
             <p>{description}</p>
             <div>
                 <input value={value} onChange={changeStoreDetail} type="number" />

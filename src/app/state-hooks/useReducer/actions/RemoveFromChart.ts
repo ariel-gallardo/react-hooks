@@ -4,4 +4,5 @@ export class ActionRemoveFromChart{
     }
     productId: number
 }
+// eslint-disable-next-line import/no-anonymous-default-export
 export default (productId: number) => new ActionRemoveFromChart(productId);

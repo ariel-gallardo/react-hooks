@@ -3,6 +3,7 @@ import ChartItem from "./ChartItem";
 import { useEffect, useState } from "react";
 import ChartDetail from "@models/ChartDetail";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Chart = ({store, dispatch}: {store: Store, dispatch: any}) => {
 
     const [chart, setChart] = useState([] as ChartDetail[])

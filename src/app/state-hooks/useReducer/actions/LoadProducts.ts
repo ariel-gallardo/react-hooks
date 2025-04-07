@@ -6,4 +6,5 @@ export class LoadProducts {
     }
     data: Product[]
 }
+// eslint-disable-next-line import/no-anonymous-default-export
 export default (data: Product[]) => new LoadProducts(data);
