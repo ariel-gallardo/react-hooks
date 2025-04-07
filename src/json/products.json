@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "name": "Apple AirPods Pro 2",
+        "description": "Auriculares inalámbricos con cancelación activa de ruido y chip H2.",
+        "price": 249.99,
+        "imgUrl": "https://picsum.photos/seed/airpodspro/300/200"
+    },
+    {
+        "id": 2,
+        "name": "Logitech MX Master 3S",
+        "description": "Mouse ergonómico con sensor de alta precisión y scroll electromagnético.",
+        "price": 99.99,
+        "imgUrl": "https://picsum.photos/seed/mxmaster3s/300/200"
+    },
+    {
+        "id": 3,
+        "name": "Samsung SSD 980 PRO 1TB",
+        "description": "Disco sólido NVMe con velocidades de lectura de hasta 7000MB/s.",
+        "price": 129.99,
+        "imgUrl": "https://picsum.photos/seed/ssd980pro/300/200"
+    },
+    {
+        "id": 4,
+        "name": "LG Ultragear 27GL850",
+        "description": "Monitor gaming 27\" QHD con 144Hz y tecnología Nano IPS.",
+        "price": 379.99,
+        "imgUrl": "https://picsum.photos/seed/ultragear27/300/200"
+    },
+    {
+        "id": 5,
+        "name": "Razer BlackWidow V4",
+        "description": "Teclado mecánico para gamers con switches verdes y RGB.",
+        "price": 169.99,
+        "imgUrl": "https://picsum.photos/seed/blackwidowv4/300/200"
+    },
+    {
+        "id": 6,
+        "name": "Sony WH-1000XM5",
+        "description": "Auriculares premium con cancelación de ruido líder en el mercado.",
+        "price": 399.99,
+        "imgUrl": "https://picsum.photos/seed/wh1000xm5/300/200"
+    },
+    {
+        "id": 7,
+        "name": "MacBook Air M2",
+        "description": "Portátil ultraligero con chip M2, 8GB RAM y 256GB SSD.",
+        "price": 1099.99,
+        "imgUrl": "https://picsum.photos/seed/macbookairm2/300/200"
+    },
+    {
+        "id": 8,
+        "name": "Dell XPS 13",
+        "description": "Laptop premium de 13.4\" con pantalla InfinityEdge y procesador Intel i7.",
+        "price": 1299.99,
+        "imgUrl": "https://picsum.photos/seed/dellxps13/300/200"
+    },
+    {
+        "id": 9,
+        "name": "iPad Air 5",
+        "description": "Tablet con chip M1, compatible con Apple Pencil y Magic Keyboard.",
+        "price": 599.99,
+        "imgUrl": "https://picsum.photos/seed/ipadair5/300/200"
+    },
+    {
+        "id": 10,
+        "name": "ASUS ROG Strix G15",
+        "description": "Laptop gamer con Ryzen 7, RTX 3060 y pantalla de 144Hz.",
+        "price": 1199.99,
+        "imgUrl": "https://picsum.photos/seed/rogstrixg15/300/200"
+    },
+    {
+        "id": 11,
+        "name": "Kindle Paperwhite",
+        "description": "E-reader con pantalla de 6.8\" y luz cálida ajustable.",
+        "price": 139.99,
+        "imgUrl": "https://picsum.photos/seed/kindlepaperwhite/300/200"
+    },
+    {
+        "id": 12,
+        "name": "GoPro HERO11 Black",
+        "description": "Cámara de acción con grabación 5.3K60 y estabilización HyperSmooth 5.0.",
+        "price": 449.99,
+        "imgUrl": "https://picsum.photos/seed/goprohero11/300/200"
+    },
+    {
+        "id": 13,
+        "name": "Elgato Wave:3",
+        "description": "Micrófono USB de calidad profesional ideal para streaming.",
+        "price": 159.99,
+        "imgUrl": "https://picsum.photos/seed/elgatowave3/300/200"
+    },
+    {
+        "id": 14,
+        "name": "Fitbit Charge 6",
+        "description": "Pulsera de actividad con GPS y monitor de salud continuo.",
+        "price": 129.99,
+        "imgUrl": "https://picsum.photos/seed/fitbitcharge6/300/200"
+    },
+    {
+        "id": 15,
+        "name": "Anker PowerCore 10000",
+        "description": "Batería externa ultra compacta con carga rápida PowerIQ.",
+        "price": 29.99,
+        "imgUrl": "https://picsum.photos/seed/powercore10000/300/200"
+    },
+    {
+        "id": 16,
+        "name": "TP-Link Deco X20",
+        "description": "Sistema Wi-Fi Mesh AX1800 para cobertura total del hogar.",
+        "price": 179.99,
+        "imgUrl": "https://picsum.photos/seed/decox20/300/200"
+    },
+    {
+        "id": 17,
+        "name": "Canon EOS R50",
+        "description": "Cámara mirrorless APS-C con grabación 4K y enfoque automático Dual Pixel.",
+        "price": 679.99,
+        "imgUrl": "https://picsum.photos/seed/canonr50/300/200"
+    },
+    {
+        "id": 18,
+        "name": "HP OfficeJet Pro 9025e",
+        "description": "Impresora multifunción con Wi-Fi, escaneo y compatibilidad con HP+.",
+        "price": 249.99,
+        "imgUrl": "https://picsum.photos/seed/hp9025e/300/200"
+    },
+    {
+        "id": 19,
+        "name": "Philips Hue White and Color Ambiance",
+        "description": "Kit de 3 bombillas inteligentes con puente y control por app o voz.",
+        "price": 179.99,
+        "imgUrl": "https://picsum.photos/seed/philipsHue/300/200"
+    },
+    {
+        "id": 20,
+        "name": "Ugreen USB-C Hub 7 en 1",
+        "description": "Adaptador con HDMI 4K, USB 3.0, lector SD y PD de 100W.",
+        "price": 49.99,
+        "imgUrl": "https://picsum.photos/seed/ugreenhub/300/200"
+    }
+]
