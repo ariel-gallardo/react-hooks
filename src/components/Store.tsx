@@ -1,4 +1,4 @@
-import StoreEntity from "@models/Store";
+import StoreEntity from "@models/StoreWithChart";
 import StoreItem from "./StoreItem";
 import { useEffect, useState } from "react";
 import Product from "@models/Product";

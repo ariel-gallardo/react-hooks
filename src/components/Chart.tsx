@@ -1,4 +1,4 @@
-import Store from "@models/Store";
+import Store from "@models/StoreWithChart";
 import ChartItem from "./ChartItem";
 import { useEffect, useState } from "react";
 import ChartDetail from "@models/ChartDetail";
