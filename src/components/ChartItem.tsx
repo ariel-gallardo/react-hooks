@@ -1,42 +1,34 @@
-import { ActionDispatch } from "@actionReducer/ActionType";
-import HandleQuantity from "@actionReducer/HandleQuantity";
 import ChartDetail from "@models/ChartDetail";
 import { Plus, Minus, Trash } from 'lucide-react';
 import Image from "next/image";
+import { useContext } from "react";
+import { StoreContext, StoreContextType } from "../app/ctx-hooks/useContext/StoreContext";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const ChartItem = ({item,dispatch}: {item: ChartDetail, dispatch: any}) => {
+const ChartItem = ({id,name, imageUrl, quantity, subTotal}: ChartDetail) => {
+
+    const {addToChart, remFromChart} = useContext(StoreContext) as StoreContextType;
 
     const plusItem = () => {
-        dispatch({
-            type: 'HandleQuantity',
-            payload: HandleQuantity(item.id, item.quantity+1)
-        } as ActionDispatch<['HandleQuantity']>)
+        addToChart(id,1)
     }
 
     const minusItem = () => {
-        dispatch({
-            type: 'HandleQuantity',
-            payload: HandleQuantity(item.id, item.quantity - 1)
-        } as ActionDispatch<['HandleQuantity']>)
+        remFromChart(id,1);
     }
 
     const removeItem = () => {
-        dispatch({
-            type: 'HandleQuantity',
-            payload: HandleQuantity(item.id, 0)
-        } as ActionDispatch<['HandleQuantity']>)
+        remFromChart(id,0);
     }
 
     return (
         <li className="border rounded-2xl p-2 text-sm flex gap-2 bg-cyan-300 justify-between">
-            <Image alt={item.name} width={100} height={200} src={item.imageUrl} className="w-10" />
+            <Image alt={name} width={100} height={200} src={imageUrl} className="w-10" />
             <div className="flex justify-between  w-100 gap-2"> 
                 <div className="bg-cyan-400 text-black rounded-xl justify-center flex flex-col p-2 w-100">
                     <div className="flex gap-2">
-                        <h6>{item.name}</h6>
-                        <p>x{item.quantity}</p>
-                        <p>{item.subTotal.toFixed(2)}<b className="text-green-300">$</b></p>
+                        <h6>{name}</h6>
+                        <p>x{quantity}</p>
+                        <p>{subTotal.toFixed(2)}<b className="text-green-300">$</b></p>
                     </div>
                 </div>
                 <div className="flex space-x-2 bg-cyan-400 rounded p-2">
