@@ -9,6 +9,7 @@ const Navbar = () => {
                     <Link href={'/state-hooks/useState'} className="text-white border-2 rounded">UseState</Link>
                     <Link href={'/state-hooks/useReducer'} className="text-white border-2 rounded">UseReducer</Link>
                     <Link href={'/ctx-hooks/useContext'} className="text-white border-2 rounded">UseContext</Link>
+                    <Link href={'/opt-hooks/useCallback'} className="text-white border-2 rounded">UseCallback</Link>
                 </div>
             </div>
         </nav>
