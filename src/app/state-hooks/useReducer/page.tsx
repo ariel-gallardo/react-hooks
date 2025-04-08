@@ -6,8 +6,8 @@ import StoreEntity from "@models/StoreWithChart";
 import { ActionDispatch } from "./actions/ActionType";
 import LoadProducts from "./actions/LoadProducts";
 import Products from "@json/products.json";
-import Store from "@components/Store";
-import Chart from "@components/Chart";
+import Store from "@components/StoreWithDispatch";
+import Chart from "@components/ChartWithDispatch";
 
 const Page = () => {
     const [store, dispatch] = useReducer(StoreFunction, {
