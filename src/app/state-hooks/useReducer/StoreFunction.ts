@@ -1,4 +1,4 @@
-import Store from "@models/Store";
+import Store from "@models/StoreWithChart";
 import { ActionDispatch, ActionType } from "./actions/ActionType";
 import { LoadProducts } from "./actions/LoadProducts";
 import ChartDetail from "@models/ChartDetail";

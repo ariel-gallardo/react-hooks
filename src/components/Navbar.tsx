@@ -8,6 +8,7 @@ const Navbar = () => {
                     <Link href={'/'} className="text-white border-2 rounded">Home</Link>
                     <Link href={'/state-hooks/useState'} className="text-white border-2 rounded">UseState</Link>
                     <Link href={'/state-hooks/useReducer'} className="text-white border-2 rounded">UseReducer</Link>
+                    <Link href={'/ctx-hooks/useContext'} className="text-white border-2 rounded">UseContext</Link>
                 </div>
             </div>
         </nav>
