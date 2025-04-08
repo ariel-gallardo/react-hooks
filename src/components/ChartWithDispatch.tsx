@@ -18,7 +18,7 @@ const ChartWithDispatch = ({store, dispatch}: {store: Store, dispatch: any}) => 
                 <h1 className="text-center text-3xl">Chart</h1>
             </div>
             <ul className="flex flex-col gap-1">
-                {chart.map(x => <ChartItem key={`chart-${x.id}`} item={x} dispatch={dispatch} />)}
+                {chart.map(x => <ChartItem key={`chart-${x.id}`} {...{ ...x, dispatch }}  />)}
             </ul>
         </section>
     );
