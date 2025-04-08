@@ -13,6 +13,9 @@ export default function Home() {
         <hr/>
         <h1 className="text-3xl">Optimization Hooks</h1>
         <Link href={'/opt-hooks/useCallback'} className=" border-2 rounded">UseCallback</Link>
+        <hr/>
+        <h1>Ref Hooks</h1>
+        <Link href={'/ref-hooks/useRef'} className=" border-2 rounded">useRef</Link>
       </div>
     </div>
   );
